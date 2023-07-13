@@ -1,0 +1,52 @@
+.body {
+  background: palevioletred;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-content: center;
+  grid-gap: 15rem;
+  padding: 50px;
+  font-family: "Titillium Web", sans-serif;
+  text-transform: uppercase;
+}
+
+.title {
+  color: white;
+  font-size: 4em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.label {
+  font-size: 1.2em;
+  text-transform: uppercase;
+}
+
+.input {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 1.2em;
+  height: 40px;
+  resize: none;
+  width: 550px;
+  margin: 15px;
+  border-radius: 4px;
+  padding-left: 20px;
+  text-transform: uppercase;
+}
+
+.button {
+  font-size: 1.3em;
+  font-family: "Titillium Web", sans-serif;
+  border-radius: 3px;
+  padding: 0.5em 1em;
+  background: rgb(109, 147, 218);
+  cursor: pointer;
+  text-transform: uppercase;
+}
