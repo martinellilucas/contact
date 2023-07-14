@@ -1,11 +1,27 @@
 import style from "./Nav.module.css";
 
 const Nav = () => {
+  const scrollTo = (where) => {
+    const section = document.getElementById(where);
+    if (section) {
+      section.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+        inline: "nearest",
+      });
+    }
+  };
   return (
     <div className={style.body}>
-      <label className={style.item}>Inicio</label>
-      <label className={style.item}>Informacion</label>
-      <label className={style.item}>Contacto</label>
+      <label className={style.item} onClick={() => scrollTo("home")}>
+        Inicio
+      </label>
+      <label className={style.item} onClick={() => scrollTo("info")}>
+        Informacion
+      </label>
+      <label className={style.item} onClick={() => scrollTo("contact")}>
+        Contacto
+      </label>
     </div>
   );
 };

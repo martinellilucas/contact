@@ -1,21 +1,22 @@
 .body {
   background: palevioletred;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  align-items: center;
-  justify-content: center;
-  grid-gap: 15rem;
-  padding: 50px;
-  font-family: "Titillium Web", sans-serif;
-  text-transform: uppercase;
-}
-
-.title {
-  color: white;
-  font-size: 4em;
   display: flex;
   align-items: center;
   justify-content: center;
+  grid-gap: 15rem;
+  padding: 150px;
+  font-family: "Titillium Web", sans-serif;
+  text-transform: uppercase;
+}
+.titleContainer {
+  background: rgb(109, 147, 218);
+  padding: 0px 50px;
+  transform: skew(-20deg);
+}
+.title {
+  color: white;
+  font-size: 3em;
+  text-align: center;
 }
 .form {
   display: flex;
@@ -23,7 +24,18 @@
   align-items: center;
   justify-content: center;
 }
-
+.section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.triangle {
+  width: 0;
+  height: 0;
+  border-left: 40px solid #f0ad4e;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+}
 .label {
   font-size: 1.2em;
   text-transform: uppercase;
@@ -42,11 +54,12 @@
 }
 
 .button {
-  font-size: 1.3em;
+  font-size: 1em;
+  color: white;
   font-family: "Titillium Web", sans-serif;
   border-radius: 3px;
   padding: 0.5em 1em;
-  background: rgb(109, 147, 218);
+  background: #f0ad4e;
   cursor: pointer;
   text-transform: uppercase;
 }

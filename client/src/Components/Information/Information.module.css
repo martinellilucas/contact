@@ -5,12 +5,18 @@
   justify-content: center;
   background-color: rgb(109, 147, 218);
   font-family: "Titillium Web", sans-serif;
-  padding: 100px;
+  padding: 150px;
   text-transform: uppercase;
 }
-
+.titleContainer {
+  transform: skew(-10deg);
+  background: palevioletred;
+  padding: 0px 50px;
+  margin: 50px;
+}
 .title {
   font-size: 4em;
+  color: white;
 }
 
 .text {
