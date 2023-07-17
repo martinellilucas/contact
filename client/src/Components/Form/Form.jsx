@@ -1,33 +1,113 @@
+import { useState } from "react";
 import style from "./Form.module.css";
+import validation from "./validation";
 
 const Form = () => {
+  const [form, setForm] = useState({
+    name: "",
+    email: "",
+    tel: "",
+    message: "",
+  });
+  const [errors, setErrors] = useState({
+    name: "",
+    email: "",
+    tel: "",
+    message: "",
+  });
+
+  const handleChange = (e) => {
+    const target = e.target.name;
+    const value = e.target.value;
+
+    setForm({ ...form, [target]: value });
+    validation({ ...form, [target]: value }, errors, setErrors, target);
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    alert("Su mensaje ha sido enviado correctamente");
+
+    setForm({ name: "", email: "", tel: "", message: "" });
+  };
   return (
     <div id="contact" className={style.body}>
       <div data-aos="zoom-out" className={style.titleContainer}>
         <h1 className={style.title}>Contacto</h1>
       </div>
-      <form className={style.form}>
+      <form onSubmit={handleSubmit} className={style.form}>
         <div data-aos="fade-left" className={style.section}>
           <div className={style.triangle}></div>
-          <label className={style.label}></label>
-          <input placeholder="Nombre" className={style.input}></input>
+          <div className={style.subSection}>
+            <label htmlFor="name" className={style.label}>
+              NOMBRE
+            </label>
+            <input
+              id="name"
+              name="name"
+              type="text"
+              value={form.name}
+              onChange={handleChange}
+              placeholder="Nombre"
+              className={!errors.name ? style.input : style.error}
+            ></input>
+            <label className={style.errorLabel}>{errors.name}</label>
+          </div>
         </div>
         <div data-aos="fade-left" className={style.section}>
           <div className={style.triangle}></div>
-          <label className={style.label}></label>
-          <input placeholder="Email" className={style.input}></input>
+          <div className={style.subSection}>
+            <label htmlFor="email" className={style.label}>
+              EMAIL
+            </label>
+            <input
+              id="email"
+              name="email"
+              type="text"
+              value={form.email}
+              onChange={handleChange}
+              placeholder="Email"
+              className={!errors.email ? style.input : style.error}
+            ></input>
+            <label className={style.errorLabel}>{errors.email}</label>
+          </div>
         </div>
         <div data-aos="fade-left" className={style.section}>
           <div className={style.triangle}></div>
-          <label className={style.label}></label>
-          <input placeholder="Teléfono" className={style.input}></input>
+          <div className={style.subSection}>
+            <label htmlFor="tel" className={style.label}>
+              TELÉFONO
+            </label>
+            <input
+              id="tel"
+              name="tel"
+              type="number"
+              value={form.tel}
+              onChange={handleChange}
+              placeholder="Teléfono"
+              className={!errors.tel ? style.input : style.error}
+            ></input>
+            <label className={style.errorLabel}>{errors.tel}</label>
+          </div>
         </div>
         <div data-aos="fade-left" className={style.section}>
           <div className={style.triangle}></div>
-          <label className={style.label}></label>
-          <textarea placeholder="Mensaje" className={style.input}></textarea>
+          <div className={style.subSection}>
+            <label htmlFor="message" className={style.label}>
+              MENSAJE
+            </label>
+            <textarea
+              id="message"
+              name="message"
+              type="text"
+              value={form.message}
+              onChange={handleChange}
+              placeholder="Mensaje"
+              className={style.input}
+            ></textarea>
+          </div>
         </div>
-        <button className={style.button} type="Submit">
+        <button className={style.button} type="submit">
           Enviar
         </button>
       </form>

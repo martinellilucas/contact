@@ -11,7 +11,6 @@
 .titleContainer {
   background: rgb(109, 147, 218);
   padding: 0px 50px;
-  transform: skew(-20deg);
 }
 .title {
   color: white;
@@ -26,6 +25,12 @@
 }
 .section {
   display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.subSection {
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
@@ -52,7 +57,33 @@
   padding-left: 20px;
   text-transform: uppercase;
 }
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+.errorLabel {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 1em;
+  color: #f0ad4e;
+}
+.error {
+  background: rgba(230, 81, 81, 0.8);
+  font-family: "Titillium Web", sans-serif;
+  font-size: 1.2em;
+  height: 40px;
+  resize: none;
+  width: 550px;
+  margin: 15px;
+  border-radius: 4px;
+  padding-left: 20px;
+  text-transform: uppercase;
+  color: white;
+}
 .button {
   font-size: 1em;
   color: white;
