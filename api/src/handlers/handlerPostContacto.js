@@ -1,7 +1,10 @@
-const handlerPostContacto = (req, res) => {
+const postContacto = require("../controllers/postContacto");
+
+const handlerPostContacto = async (req, res) => {
   try {
-    const { name, email } = req.body;
-    res.status(200).send(`Llego a post contacto con ${name} ${email}`);
+    const { name, email, tel, message } = req.body;
+    const nuevoContacto = await postContacto(name, email, tel, message);
+    res.status(200).send(nuevoContacto);
   } catch (error) {
     res.status(400).json("hubo un error");
   }

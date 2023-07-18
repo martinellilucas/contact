@@ -16,6 +16,11 @@ module.exports = (sequelize) => {
       allowNull: false,
       unique: true,
     },
+    tel: {
+      type: DataTypes.STRING,
+      allowNull: false,
+      unique: true,
+    },
     message: {
       type: DataTypes.STRING,
     },
