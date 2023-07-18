@@ -4,7 +4,7 @@ import Nav from "../Nav/Nav";
 
 const Home = () => {
   return (
-    <div>
+    <div id="home">
       <Nav></Nav>
       <Information />
       <Form></Form>
