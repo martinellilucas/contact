@@ -18,7 +18,12 @@ const Login = ({ login }) => {
   };
   return (
     <div className={style.body}>
-      <h1 className={style.title}>Bienvenido/a al Dashboard</h1>
+      <div className={style.titleContainer}>
+        <h1 className={style.title}>Bienvenido/a al Dashboard</h1>
+      </div>
+      <div className={style.subtitleContainer}>
+        <h2 className={style.subTitle}>Inicie sesión</h2>
+      </div>
       <form onSubmit={handleSubmit} className={style.form}>
         <div className={style.section}>
           <div className={style.triangle}></div>
@@ -46,7 +51,7 @@ const Login = ({ login }) => {
             <input
               name="password"
               id="password"
-              type="text"
+              type="password"
               value={userData.password}
               onChange={handleChange}
               className={style.input}

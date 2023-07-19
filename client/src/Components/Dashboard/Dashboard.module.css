@@ -1,9 +1,74 @@
 .body {
-  background: palevioletred;
+  background: rgb(109, 147, 218);
+  padding: 100px;
+  font-family: "Titillium Web", sans-serif;
+  text-transform: uppercase;
+}
+.titleContainer {
   display: flex;
   align-items: center;
-  justify-content: center;
-  grid-gap: 15rem;
+  justify-content: left;
+}
+.title {
+  background: palevioletred;
+  font-size: 5em;
+  color: white;
+  margin: 50px;
+  padding: 0 50px;
+}
+.subtitleContainer {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  margin: 50px;
+}
+.subTitle {
+  font-size: 3em;
+  background: #f0ad4e;
+  padding: 0 20px;
+}
+.searchBar {
+  display: flex;
+  margin-left: 35%;
+  width: 60%;
+  justify-content: right;
+  align-items: center;
+}
+.input {
+  text-align: center;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+.tabla {
+  border-collapse: collapse;
   font-family: "Titillium Web", sans-serif;
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom: 150px;
+}
+
+.tabla th,
+.tabla td {
+  padding: 20px;
+  text-align: center;
+  border: 1px solid #ddd;
+  font-family: "Titillium Web", sans-serif;
+  text-transform: none;
+}
+.tabla td {
+  color: white;
+  background-color: rgb(109, 147, 218);
+}
+.tabla th {
+  background-color: #f0ad4e;
+}
+.button {
+  font-size: 1em;
+  color: black;
+  font-family: "Titillium Web", sans-serif;
+  border-radius: 3px;
+  padding: 0.5em 1em;
+  background: #f0ad4e;
+  cursor: pointer;
   text-transform: uppercase;
 }

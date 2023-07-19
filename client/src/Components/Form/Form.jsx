@@ -1,6 +1,8 @@
 import { useState } from "react";
 import style from "./Form.module.css";
 import validation from "./validation";
+import { useDispatch } from "react-redux";
+import { postContacto } from "../../redux/actions/actions";
 
 const Form = () => {
   const [form, setForm] = useState({
@@ -16,6 +18,8 @@ const Form = () => {
     message: "",
   });
 
+  const dispatch = useDispatch();
+
   const handleChange = (e) => {
     const target = e.target.name;
     const value = e.target.value;
@@ -27,8 +31,9 @@ const Form = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     alert("Su mensaje ha sido enviado correctamente");
-
+    dispatch(postContacto(form));
     setForm({ name: "", email: "", tel: "", message: "" });
+    setErrors({ name: "", email: "", tel: "", message: "" });
   };
   return (
     <div id="contact" className={style.body}>
@@ -76,7 +81,7 @@ const Form = () => {
           <div className={style.triangle}></div>
           <div className={style.subSection}>
             <label htmlFor="tel" className={style.label}>
-              TELÉFONO
+              WHATSAPP
             </label>
             <input
               id="tel"
@@ -84,7 +89,7 @@ const Form = () => {
               type="number"
               value={form.tel}
               onChange={handleChange}
-              placeholder="Teléfono"
+              placeholder="Whatsapp"
               className={!errors.tel ? style.input : style.error}
             ></input>
             <label className={style.errorLabel}>{errors.tel}</label>
@@ -107,7 +112,19 @@ const Form = () => {
             ></textarea>
           </div>
         </div>
-        <button className={style.button} type="submit">
+        <button
+          className={
+            !errors.name &&
+            !errors.email &&
+            !errors.tel &&
+            form.name &&
+            form.email &&
+            form.tel
+              ? style.button
+              : style.buttonDisabled
+          }
+          type="submit"
+        >
           Enviar
         </button>
       </form>

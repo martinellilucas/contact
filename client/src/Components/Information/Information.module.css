@@ -1,23 +1,39 @@
 .body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   background-color: rgb(109, 147, 218);
   font-family: "Titillium Web", sans-serif;
-  padding: 150px;
+  padding: 100px;
   text-transform: uppercase;
 }
 .titleContainer {
-  background: palevioletred;
-  padding: 0px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+
   margin: 50px;
 }
 .title {
-  font-size: 4em;
+  background: palevioletred;
+  font-size: 5em;
+  color: white;
+  padding: 0 50px;
+}
+.subtitleContainer {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  margin: 50px;
+}
+.subTitle {
+  font-size: 3em;
+  background: #f0ad4e;
+  padding: 0 20px;
+}
+.text {
+  font-size: 1.5em;
   color: white;
 }
-
-.text {
-  font-size: 1.2em;
+.separator {
+  width: 80%;
+  margin: 10%;
+  border: 4px solid palevioletred;
 }

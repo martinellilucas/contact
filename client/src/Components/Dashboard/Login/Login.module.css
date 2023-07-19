@@ -1,24 +1,39 @@
 .body {
-  padding-bottom: 470px;
+  padding-bottom: 150px;
+}
+.titleContainer {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: left;
 }
 .title {
-  margin-bottom: 150px;
-  font-size: 4em;
-  font-weight: bolder;
+  background: palevioletred;
+  font-size: 5em;
   color: white;
+  margin: 50px;
+  padding: 0 50px;
+}
+.subtitleContainer {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  margin: 50px;
+}
+.subTitle {
+  font-size: 3em;
+  background: #f0ad4e;
+  padding: 0 20px;
 }
 .form {
   display: flex;
+  margin-left: 30%;
+  width: 40%;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border: 1px solid black;
+  border: 1px solid white;
   border-radius: 15px;
-  background-color: white;
+  background-color: palevioletred;
   padding: 50px;
 }
 .section {
@@ -42,7 +57,10 @@
 .label {
   font-size: 1.2em;
   text-transform: uppercase;
-  margin-left: 30px;
+  margin-left: 15px;
+  text-align: center;
+  width: 130px;
+  background-color: #f0ad4e;
 }
 
 .input {
