@@ -1,0 +1,9 @@
+.body {
+  background: palevioletred;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-gap: 15rem;
+  font-family: "Titillium Web", sans-serif;
+  text-transform: uppercase;
+}
