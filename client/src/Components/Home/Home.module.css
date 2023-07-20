@@ -3,7 +3,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 1000px;
+  height: 600px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -12,7 +12,7 @@
 .subTitle {
   font-family: "Hagrid Text Trial", sans-serif;
   color: white;
-  font-size: 3em;
+  font-size: 2em;
   font-weight: 900;
   width: 350px;
   text-align: center;
@@ -22,9 +22,9 @@
 .title {
   font-family: "Hagrid Trial", sans-serif;
   color: white;
-  font-size: 6em;
+  font-size: 4em;
   font-weight: 500;
-  width: 750px;
+  width: 600px;
   margin: 50px;
   margin-left: 150px;
 }
