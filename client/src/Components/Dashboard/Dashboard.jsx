@@ -13,22 +13,16 @@ import {
   PopoverContent,
   PopoverHeader,
   PopoverBody,
-  PopoverFooter,
   PopoverArrow,
   PopoverCloseButton,
-  PopoverAnchor,
   Button,
   Input,
-  FormControl,
   FormLabel,
-  ButtonGroup,
-  useDisclosure,
 } from "@chakra-ui/react";
 
 const Dashboard = () => {
   const [access, setAccess] = useState(false);
   const [comentario, setComentario] = useState("");
-  const [buscar, setBuscar] = useState("");
   const contactos = useSelector((state) => state.contactos);
   const dispatch = useDispatch();
   const email = "nataliacolman.18@gmail.com";
@@ -62,11 +56,19 @@ const Dashboard = () => {
     <div className={style.body}>
       {access ? (
         <div>
-          <div className={style.titleContainer}>
+          <div
+            data-aos="fade-down"
+            data-aos-duration="1500"
+            className={style.titleContainer}
+          >
             <h1 className={style.title}>Panel</h1>
           </div>
           <hr></hr>
-          <div className={style.subtitleContainer}>
+          <div
+            data-aos="fade-down"
+            data-aos-duration="1500"
+            className={style.subtitleContainer}
+          >
             <h2 className={style.subTitle}>Contactos</h2>
           </div>
           <div className={style.searchBar}>

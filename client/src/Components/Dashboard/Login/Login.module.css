@@ -10,19 +10,21 @@
   background: palevioletred;
   font-size: 5em;
   color: white;
-  margin: 50px;
+  margin-top: 50px;
+  margin-bottom: 50px;
   padding: 0 50px;
 }
 .subtitleContainer {
   display: flex;
   align-items: center;
   justify-content: left;
-  margin: 50px;
 }
 .subTitle {
   font-size: 3em;
   background: #f0ad4e;
   padding: 0 20px;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 .form {
   display: flex;

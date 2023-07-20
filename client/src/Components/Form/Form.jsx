@@ -37,7 +37,11 @@ const Form = () => {
   };
   return (
     <div id="contact" className={style.body}>
-      <div data-aos="zoom-out" className={style.titleContainer}>
+      <div
+        data-aos="zoom-out"
+        data-aos-duration="1500"
+        className={style.titleContainer}
+      >
         <h1 className={style.title}>Contacto</h1>
       </div>
       <form onSubmit={handleSubmit} className={style.form}>

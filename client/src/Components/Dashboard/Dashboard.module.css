@@ -1,6 +1,7 @@
 .body {
   background: rgb(109, 147, 218);
-  padding: 100px;
+  padding-top: 50px;
+  padding-bottom: 100px;
   font-family: "Titillium Web", sans-serif;
   text-transform: uppercase;
 }
@@ -13,17 +14,19 @@
   background: palevioletred;
   font-size: 5em;
   color: white;
-  margin: 50px;
+  margin-top: 50px;
+  margin-bottom: 50px;
   padding: 0 50px;
 }
 .subtitleContainer {
   display: flex;
   align-items: center;
   justify-content: left;
-  margin: 50px;
 }
 .subTitle {
   font-size: 3em;
+  margin-top: 50px;
+  margin-bottom: 50px;
   background: #f0ad4e;
   padding: 0 20px;
 }
@@ -42,7 +45,8 @@
 .tabla {
   border-collapse: collapse;
   font-family: "Titillium Web", sans-serif;
-  width: 100%;
+  width: 80%;
+  margin-left: 10%;
   margin-top: 50px;
   margin-bottom: 150px;
 }

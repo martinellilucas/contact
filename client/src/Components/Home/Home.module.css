@@ -1,0 +1,30 @@
+.header {
+  background-image: url("../../assets/images/2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 1000px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.subTitle {
+  font-family: "Hagrid Text Trial", sans-serif;
+  color: white;
+  font-size: 3em;
+  font-weight: 900;
+  width: 350px;
+  text-align: center;
+  margin: 50px;
+}
+
+.title {
+  font-family: "Hagrid Trial", sans-serif;
+  color: white;
+  font-size: 6em;
+  font-weight: 500;
+  width: 750px;
+  margin: 50px;
+  margin-left: 150px;
+}

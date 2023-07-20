@@ -19,8 +19,9 @@ const Login = ({ login }) => {
   return (
     <div className={style.body}>
       <div className={style.titleContainer}>
-        <h1 className={style.title}>Bienvenido/a al Dashboard</h1>
+        <h1 className={style.title}>Bienvenido/a al Panel</h1>
       </div>
+      <hr></hr>
       <div className={style.subtitleContainer}>
         <h2 className={style.subTitle}>Inicie sesión</h2>
       </div>

@@ -1,39 +1,56 @@
 .body {
-  background-color: rgb(109, 147, 218);
-  font-family: "Titillium Web", sans-serif;
-  padding: 100px;
+  font-family: "Hagrid Trial", sans-serif;
   text-transform: uppercase;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
-.titleContainer {
-  display: flex;
-  align-items: center;
-  justify-content: left;
 
-  margin: 50px;
+.imageContainer {
+  height: 1000px;
+  background-image: url("../../assets/images/foto.png");
 }
 .title {
-  background: palevioletred;
-  font-size: 5em;
+  font-family: "Twister Script", sans-serif;
+  font-size: 8em;
+  text-align: center;
   color: white;
-  padding: 0 50px;
-}
-.subtitleContainer {
-  display: flex;
-  align-items: center;
-  justify-content: left;
-  margin: 50px;
+  text-shadow: 2px 2px 4px black;
+  text-transform: none;
+  margin-top: 70%;
 }
 .subTitle {
+  font-family: "open Sauce One", sans-serif;
   font-size: 3em;
-  background: #f0ad4e;
-  padding: 0 20px;
-}
-.text {
-  font-size: 1.5em;
+  text-transform: uppercase;
+  text-align: center;
   color: white;
+  text-shadow: 2px 2px 4px black;
 }
-.separator {
-  width: 80%;
-  margin: 10%;
-  border: 4px solid palevioletred;
+.infoContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: rgba(202, 167, 122);
+}
+.info {
+  color: white;
+  font-size: 2.5em;
+  text-align: center;
+  font-weight: 600;
+  padding: 0px 100px;
+  font-family: "Open Sauce One", sans-serif;
+  text-transform: none;
+  text-shadow: 2px 2px 4px black;
+}
+.celeste {
+  background-color: cornflowerblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.violeta {
+  background-color: palevioletred;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
