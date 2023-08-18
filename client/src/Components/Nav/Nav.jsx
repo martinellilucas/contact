@@ -19,6 +19,12 @@ const Nav = () => {
       <label className={style.item} onClick={() => scrollTo("info")}>
         Informacion
       </label>
+      <label className={style.item} onClick={() => scrollTo("premios")}>
+        Premios
+      </label>
+      <label className={style.item} onClick={() => scrollTo("preguntas")}>
+        Preguntas frecuentes
+      </label>
       <label className={style.item} onClick={() => scrollTo("contact")}>
         Contacto
       </label>

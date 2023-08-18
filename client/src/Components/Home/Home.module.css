@@ -1,30 +1,45 @@
 .header {
-  background-image: url("../../assets/images/2.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 600px;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .subTitle {
   font-family: "Hagrid Text Trial", sans-serif;
   color: white;
-  font-size: 2em;
-  font-weight: 900;
-  width: 350px;
+  background-color: dodgerblue;
+  font-size: 3em;
   text-align: center;
-  margin: 50px;
 }
 
 .title {
   font-family: "Hagrid Trial", sans-serif;
-  color: white;
+  color: orange;
   font-size: 4em;
-  font-weight: 500;
-  width: 600px;
-  margin: 50px;
-  margin-left: 150px;
+  text-align: center;
+}
+
+.anticipo {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.formContainer {
+  padding: 40px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+}
+.img {
+  border-radius: 30px;
+}
+.text {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 2.8em;
+  text-align: center;
 }

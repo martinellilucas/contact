@@ -36,13 +36,13 @@ const Form = () => {
     setErrors({ name: "", email: "", tel: "", message: "" });
   };
   return (
-    <div id="contact" className={style.body}>
+    <div className={style.body}>
       <div
         data-aos="zoom-out"
         data-aos-duration="1500"
         className={style.titleContainer}
       >
-        <h1 className={style.title}>Contacto</h1>
+        <h1 className={style.title}>Registrate para recibir más información</h1>
       </div>
       <form onSubmit={handleSubmit} className={style.form}>
         <div data-aos="fade-left" className={style.section}>

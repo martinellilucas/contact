@@ -1,56 +1,42 @@
 .body {
-  font-family: "Hagrid Trial", sans-serif;
-  text-transform: uppercase;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  padding: 5px;
 }
 
-.imageContainer {
-  height: 1000px;
-  background-image: url("../../assets/images/foto.png");
+.infoContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1em;
 }
 .title {
-  font-family: "Twister Script", sans-serif;
-  font-size: 8em;
-  text-align: center;
   color: white;
-  text-shadow: 2px 2px 4px black;
-  text-transform: none;
-  margin-top: 70%;
-}
-.subTitle {
-  font-family: "open Sauce One", sans-serif;
   font-size: 3em;
   text-transform: uppercase;
   text-align: center;
-  color: white;
-  text-shadow: 2px 2px 4px black;
-}
-.infoContainer {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  background-color: rgba(202, 167, 122);
-}
-.info {
-  color: white;
-  font-size: 2.5em;
-  text-align: center;
-  font-weight: 600;
-  padding: 0px 100px;
   font-family: "Open Sauce One", sans-serif;
   text-transform: none;
   text-shadow: 2px 2px 4px black;
 }
+.info {
+  color: white;
+  font-size: 2em;
+  text-align: center;
+  font-family: "Open Sauce One", sans-serif;
+  text-shadow: 2px 2px 4px black;
+}
 .celeste {
   background-color: cornflowerblue;
+  height: 500px;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
-.violeta {
-  background-color: palevioletred;
+.naranja {
+  background-color: orange;
+  height: 500px;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
 }
